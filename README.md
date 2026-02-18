@@ -14,7 +14,7 @@ playwright install chromium
 ## Usage
 
 ```bash
-python scraper.py <thread-url>
+python main.py <thread-url>
 ```
 
 Options:
@@ -28,13 +28,13 @@ Examples:
 
 ```bash
 # Basic usage
-python scraper.py "https://www.unknowncheats.me/forum/section/12345-thread-title.html"
+python main.py "https://www.unknowncheats.me/forum/section/12345-thread-title.html"
 
 # Custom output path
-python scraper.py "https://www.unknowncheats.me/forum/section/12345-thread-title.html" -o data/thread.json
+python main.py "https://www.unknowncheats.me/forum/section/12345-thread-title.html" -o data/thread.json
 
 # Show the browser window
-python scraper.py "https://www.unknowncheats.me/forum/section/12345-thread-title.html" --no-headless
+python main.py "https://www.unknowncheats.me/forum/section/12345-thread-title.html" --no-headless
 ```
 
 The scraper resumes from where it left off - re-run the same command to pick up new pages.
